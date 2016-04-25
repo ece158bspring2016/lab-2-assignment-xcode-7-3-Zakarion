@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10116" systemVersion="15E65" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <viewController id="BYZ-38-t0r" customClass="LoginViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC" customClass="LoginViewController">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Wild Fire" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="zvM-4N-XaS">
+                                <rect key="frame" x="199" y="73" width="134" height="95"/>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" name="AvenirNextCondensed-Regular" family="Avenir Next Condensed" pointSize="42"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="53A-8b-S5G">
+                                <rect key="frame" x="171" y="385" width="191" height="30"/>
+                                <state key="normal" title="Anonymous Log In">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="fire-icon-big.png" translatesAutoresizingMaskIntoConstraints="NO" id="2yp-Ug-M4p">
+                                <rect key="frame" x="203" y="191" width="127" height="128"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" red="0.45771521469999998" green="0.0095948617779999992" blue="0.0048949215640000003" alpha="1" colorSpace="calibratedRGB"/>
+                    </view>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="421" y="107"/>
+        </scene>
+        <!--Root View Controller-->
+        <scene sceneID="dys-no-aGA">
+            <objects>
+                <tableViewController id="vDy-hV-9x2" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="65k-kk-YTr">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="qEz-ZM-RjX">
+                                <rect key="frame" x="0.0" y="92" width="600" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="qEz-ZM-RjX" id="UPi-qF-oVC">
+                                    <rect key="frame" x="0.0" y="0.0" width="600" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </tableViewCellContentView>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="vDy-hV-9x2" id="jzq-lu-LX3"/>
+                            <outlet property="delegate" destination="vDy-hV-9x2" id="GOM-lQ-E4h"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Root View Controller" id="Il6-0i-bHE"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="c2E-iy-9PZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2740" y="-262"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="vDq-Qg-Bzs">
+            <objects>
+                <navigationController id="xH0-7b-T56" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="IO8-bB-jO2"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="aGM-Ug-9Tl">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="vDy-hV-9x2" kind="relationship" relationship="rootViewController" id="b2j-ja-NCk"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="VzY-0d-0DY" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920" y="-262"/>
+        </scene>
+        <!--Item 2-->
+        <scene sceneID="Soi-TU-uBc">
+            <objects>
+                <viewController id="dLh-u4-Kwj" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="IlB-7r-Jlb"/>
+                        <viewControllerLayoutGuide type="bottom" id="77Y-B2-Vyv"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yTm-dW-5wp">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Item 2" id="NwD-Ad-xz2"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="OZj-wk-vkF" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1920" y="437"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="u8W-cm-W5d">
+            <objects>
+                <tabBarController id="ZxR-ut-kLt" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="ilZ-2l-CPU">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="dLh-u4-Kwj" kind="relationship" relationship="viewControllers" id="nJJ-9A-udh"/>
+                        <segue destination="xH0-7b-T56" kind="relationship" relationship="viewControllers" id="FgQ-Y6-QS9"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="fIu-dw-IZH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1100" y="107"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="fire-icon-big.png" width="155" height="155"/>
+    </resources>
+</document>
